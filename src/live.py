@@ -3,7 +3,7 @@
 #
 # FileName: 	live_record
 # CreatedDate:  2021-10-17 16:22:30 +0900
-# LastModified: 2021-10-19 04:04:38 +0900
+# LastModified: 2021-10-29 04:00:39 +0900
 #
 
 
@@ -42,22 +42,28 @@ def main():
     cam = cv2.VideoCapture(gstreamer_pipeline(), cv2.CAP_GSTREAMER)
 
     while True:
-        ret, img = cam.read()
+        ret, original_img = cam.read()
         if ret is not True:
             break
 
-        img = cv2.resize(img, (image_size[0], image_size[1]))
-        img = cv2.cvtColor(img, cv2.COLOR_BGR2RGB)
+        resized_img = cv2.resize(original_img, (image_size[0], image_size[1]))
+        img = cv2.cvtColor(resized_img, cv2.COLOR_BGR2RGB)
         img = img_to_array(img)
         img = np.array(img)[:, :, :3]
-        show_img = cv2.cvtColor(cv2.resize(img, (480, 640)), cv2.COLOR_RGB2BGR)
         img = np.expand_dims(img, axis=0)
 
         out_img = transfer_style([img, 1])[0]
-
         out_img = cv2.cvtColor(out_img[0], cv2.COLOR_RGB2BGR)
-        out_img = cv2.resize(out_img, (480, 640))
-        show_img = np.hstack((np.uint8(show_img), np.uint8(out_img)))
+
+        if args["type"] == 'style_only':
+            show_img = np.uint8(cv2.resize(out_img, (1280, 720)))
+
+        else:
+           show_original_img = cv2.cvtColor(cv2.resize(resized_img, (480, 640)), cv2.COLOR_RGB2BGR)
+           show_out_img = cv2.resize(out_img, (480, 640))
+           show_img = np.hstack((np.uint8(show_original_img), np.uint8(show_out_img)))
+
+
         cv2.imshow('stylize movie', show_img)
 
         key = cv2.waitKey(10)

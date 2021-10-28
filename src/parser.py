@@ -3,7 +3,7 @@
 #
 # FileName: 	parser
 # CreatedDate:  2021-10-17 16:26:45 +0900
-# LastModified: 2021-10-18 13:16:27 +0900
+# LastModified: 2021-10-29 03:53:22 +0900
 #
 
 
@@ -15,6 +15,9 @@ def get_live_parser():
     parser = argparse.ArgumentParser(
         description='Real-Time Style Transfer'
     )
+    parser.add_argument('--type', type=str, default="style_only",
+                        choices=["style_only", "original_and_style"],
+                        help='style_only? or original_and_style?')
 
     parser.add_argument('--model_path', type=str,
                         help='model path from trained models')
@@ -37,8 +40,8 @@ def get_record_parser():
 def gstreamer_pipeline(
     capture_width=1280,
     capture_height=720,
-    display_width=400,
-    display_height=600,
+    display_width=1280,
+    display_height=720,
     framerate=20,
     flip_method=0,
 ):

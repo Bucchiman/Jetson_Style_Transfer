@@ -2,14 +2,17 @@
 #
 # FileName: 	running
 # CreatedDate:  2021-10-17 23:50:21 +0900
-# LastModified: 2021-10-18 14:39:45 +0900
+# LastModified: 2021-10-29 03:54:44 +0900
 #
 
 
 
-if [[ $1 == "live" ]]
+if [[ $1 == "live_style_only" ]]
 then
     python live.py --model_path $2
+elif [[ $1 == "live_original_style" ]]
+then
+    python live.py --type original_and_style --model_path $2
 elif [[ $1 == "record" ]]
 then
     now=`date "+%Y_%m_%d_%H_%M_%S"`
