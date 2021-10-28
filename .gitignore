@@ -2,3 +2,6 @@ datas
 outputs
 intro_videos
 __pycache__
+.DS_Store
+
+tmp/
