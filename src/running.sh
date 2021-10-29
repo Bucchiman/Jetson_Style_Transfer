@@ -2,7 +2,7 @@
 #
 # FileName: 	running
 # CreatedDate:  2021-10-17 23:50:21 +0900
-# LastModified: 2021-10-29 03:54:44 +0900
+# LastModified: 2021-10-29 21:03:13 +0900
 #
 
 
@@ -21,7 +21,7 @@ then
     ffmpeg -r 20 -i $output_path/tmp/image_%05d.jpg -vcodec libx264 -pix_fmt yuv420p -r 20 $output_path/stylize_movie.mp4
     rm -r $output_path/tmp
 else
-    echo "usage error: live or record?"
+    echo "usage error: live_style_only, live_original_style or record?"
 fi
 return
 
