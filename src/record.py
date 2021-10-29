@@ -3,7 +3,7 @@
 #
 # FileName: 	record
 # CreatedDate:  2021-10-17 23:16:50 +0900
-# LastModified: 2021-10-18 14:36:58 +0900
+# LastModified: 2021-10-30 03:40:45 +0900
 #
 
 
@@ -20,11 +20,12 @@ def main():
     if not os.path.exists(args["output_path"]):
         os.makedirs(args["output_path"])
 
-    cam = cv2.VideoCapture(gstreamer_pipeline(), cv2.CAP_GSTREAMER)
+    cam = cv2.VideoCapture(gstreamer_pipeline(display_width=400, display_height=600), cv2.CAP_GSTREAMER)
 
     fps = cam.get(cv2.CAP_PROP_FPS)
     height = cam.get(cv2.CAP_PROP_FRAME_HEIGHT)
     width = cam.get(cv2.CAP_PROP_FRAME_WIDTH)
+    print(height, width)
 
     fourcc = cv2.VideoWriter_fourcc('m', 'p', '4', 'v')
 
@@ -39,7 +40,7 @@ def main():
         cv2.imshow("Original_Image", img)
         out.write(img)
 
-        key = cv2.waitKey(10)
+        key = cv2.waitKey(30)
         if key == 27:
             break
 
