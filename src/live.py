@@ -3,7 +3,7 @@
 #
 # FileName: 	live_record
 # CreatedDate:  2021-10-17 16:22:30 +0900
-# LastModified: 2021-10-30 02:20:56 +0900
+# LastModified: 2021-10-30 02:26:57 +0900
 #
 
 
@@ -59,7 +59,7 @@ def main():
             show_img = np.uint8(cv2.resize(out_img, (1280, 720)))
 
         else:
-            show_original_img = cv2.cvtColor(cv2.resize(resized_img, (480, 640)), cv2.COLOR_RGB2BGR)
+            show_original_img = cv2.resize(resized_img, (480, 640))
             show_out_img = cv2.resize(out_img, (480, 640))
             show_img = np.hstack((np.uint8(show_original_img), np.uint8(show_out_img)))
 
