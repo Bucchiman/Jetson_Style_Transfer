@@ -2,11 +2,11 @@
 #
 # FileName: 	running
 # CreatedDate:  2021-10-17 23:50:21 +0900
-# LastModified: 2021-10-29 21:03:13 +0900
+# LastModified: 2021-10-29 22:40:49 +0900
 #
 
 
-
+source ../style_transfer_venv/bin/activate
 if [[ $1 == "live_style_only" ]]
 then
     python live.py --model_path $2
