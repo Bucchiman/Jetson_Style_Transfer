@@ -54,4 +54,4 @@ So you can see style transfer images there.
 We use lego blocks in order to play style transfer outside.
 If you are interesting, let's make original portable jetson.
 
-<img src="https://user-images.githubusercontent.com/52972710/139456085-85f6a579-623e-4135-8b4a-81e4dd3f54ca.jpeg" width="320px">
+<img src="https://user-images.githubusercontent.com/52972710/139456085-85f6a579-623e-4135-8b4a-81e4dd3f54ca.jpeg" width="640px">
