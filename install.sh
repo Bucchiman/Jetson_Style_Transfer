@@ -2,10 +2,11 @@
 #
 # FileName: 	install
 # CreatedDate:  2021-10-29 21:06:50 +0900
-# LastModified: 2021-10-29 22:28:15 +0900
+# LastModified: 2021-10-29 23:13:03 +0900
 #
 
 
+sudo apt-get install libhdf5-serial-dev hdf5-tools libhdf5-dev zlib1g-dev zip libjpeg8-dev liblapack-dev libblas-dev gfortran
 venv_dir="style_transfer_venv"
 python3 -m venv $venv_dir
 
