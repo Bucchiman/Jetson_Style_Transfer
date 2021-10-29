@@ -2,7 +2,7 @@
 We use Jetson Nano (2GB) and JetPack 4.5.
 If you follow the steps below, you can play Real-time Style Transfer.
 
-https://user-images.githubusercontent.com/52972710/139449867-42138f17-f613-4cfb-99b5-9d137e43a701.mp4
+<img src="https://user-images.githubusercontent.com/52972710/139449867-42138f17-f613-4cfb-99b5-9d137e43a701.mp4" width="320px"
 
 
 # Install
@@ -54,4 +54,4 @@ So you can see style transfer images there.
 We use lego blocks in order to play style transfer outside.
 If you are interesting, let's make original portable jetson.
 
-![Jetson_Projects 003](https://user-images.githubusercontent.com/52972710/139456085-85f6a579-623e-4135-8b4a-81e4dd3f54ca.jpeg)
+<img src="https://user-images.githubusercontent.com/52972710/139456085-85f6a579-623e-4135-8b4a-81e4dd3f54ca.jpeg" width="320px">
