@@ -11,8 +11,40 @@ First of all, you change directory to our repository.
 Then the "install.sh" script is running.
 This script is written for JetPack 4.5.
 If you use other JetPack, you have to change a part of the script.
-(https://developer.download.nvidia.com/compute/redist/jp/v45 -> https://developer.download.nvidia.com/compute/redist/jp/v43)
+(If you use Jetpack 4.3, change https://developer.download.nvidia.com/compute/redist/jp/v45 -> https://developer.download.nvidia.com/compute/redist/jp/v43)
 ```bash
+    $ git clone git@github.com:Bucchiman/Jetson_Style_Transfer.git
     $ cd Jetson_Style_Transfer
     $ ./install.sh
 ```
+
+# Usage
+## Live Style Only
+If you want to open real-time style transfer on full screen, then you can input the following.
+```bash
+    $ cd src
+    $ ./running.sh live_style_only ../models/001.h5
+```
+
+## Live Original and Style Transfer
+If you want to real-time original and style transfer, you can use the command.
+```bash
+    $ cd src
+    $ ./running.sh live_original_style ../models/001.h5
+```
+
+## Make videos
+If you want to make videos of style transfer, this command is input.
+```bash
+    $ cd src
+    $ ./running.sh record ../models/001.h5
+```
+Output directory is made and you can find time stamp directories.
+In this directory, original videos and style_transfer videos are found.
+
+
+# Many trained models
+We have many trained models.
+We make sure you can find your favorite style tranfer images.
+In this repository, "images" directory have style transfer images we gather.
+So you can see style transfer images there.
