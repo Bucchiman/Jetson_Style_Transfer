@@ -48,3 +48,10 @@ We have many trained models.
 We make sure you can find your favorite style tranfer images.
 In this repository, "images" directory have style transfer images we gather.
 So you can see style transfer images there.
+
+
+# Lego blocks are Useful!
+We use lego blocks in order to play style transfer outside.
+If you are interesting, let's make original portable jetson.
+
+[Jetson_Projects.pdf](https://github.com/Bucchiman/Jetson_Style_Transfer/files/7442796/Jetson_Projects.pdf)
