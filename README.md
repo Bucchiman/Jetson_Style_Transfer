@@ -66,4 +66,5 @@ If you are interesting, let's make original portable jetson.
 
 
 # Reference
-
+- https://github.com/fritzlabs/fritz-models
+- https://github.com/JetsonHacksNano/CSI-Camera
