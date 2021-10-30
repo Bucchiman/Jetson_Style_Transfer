@@ -15,7 +15,7 @@ If you use other JetPack, you have to change a part of the script.
 ```bash
     $ git clone git@github.com:Bucchiman/Jetson_Style_Transfer.git
     $ cd Jetson_Style_Transfer
-    $ ./install.sh
+    $ ./install.sh  # You need to adjust url of tensorflow depending on your JetPack
 ```
 
 # Usage
