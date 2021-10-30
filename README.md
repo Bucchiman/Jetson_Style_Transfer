@@ -64,6 +64,7 @@ If you are interesting, let's make original portable jetson.
 
 <img src="https://user-images.githubusercontent.com/52972710/139456085-85f6a579-623e-4135-8b4a-81e4dd3f54ca.jpeg" width="640px">
 
+![output](https://user-images.githubusercontent.com/52972710/139541647-b774af37-b8d8-4cee-bc2c-3bb71601d118.gif)
 
 # Reference
 - https://github.com/fritzlabs/fritz-models
