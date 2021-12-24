@@ -18,7 +18,7 @@ This script is written for JetPack 4.5.
 If you use other JetPack, you have to change a part of the script.
 (If you use Jetpack 4.3, change https://developer.download.nvidia.com/compute/redist/jp/v45 -> https://developer.download.nvidia.com/compute/redist/jp/v43)
 ```bash
-    $ git clone git@github.com:Bucchiman/Jetson_Style_Transfer.git
+    $ git clone https://github.com/Bucchiman/Jetson_Style_Transfer.git
     $ cd Jetson_Style_Transfer
     $ ./install.sh  # You need to adjust url of tensorflow depending on your JetPack
 ```
